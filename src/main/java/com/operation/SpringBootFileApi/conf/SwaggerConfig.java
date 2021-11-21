@@ -26,8 +26,8 @@ public class SwaggerConfig {
 	    }
 	 private ApiInfo apiEndPointsInfo() {
 	        return new ApiInfoBuilder().title("Spring Boot Swagger Examples")
-	                .description("User Api Dokümantasyonu")
-	                .contact(new Contact("Sumeyye Akay", "", ""))
+	                .description("file Api Dokümantasyonu")
+	                .contact(new Contact("hamza colak", "", ""))
 	                .license("Apache 2.0")
 	                .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
 	                .version("1.12.3")
