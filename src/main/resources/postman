@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "6855313e-c5eb-419a-bcf6-74d0aaa91fe5",
+		"name": "postmanCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "3f867823-7a30-4c81-b53f-c871605d2903",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"hamza\",\n    \"password\":\"hamza123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYW16YSIsImV4cCI6MTYzNzUyNzcxNiwiaWF0IjoxNjM3NTA5NzE2fQ.WZ9h__CfQ8z99MxwFADQm6mA9WWsHL19bPoQfj68lV0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/hamza.colak/Desktop/cks.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/FileResource/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"FileResource",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYW16YSIsImV4cCI6MTYzNzUyNzcxNiwiaWF0IjoxNjM3NTA5NzE2fQ.WZ9h__CfQ8z99MxwFADQm6mA9WWsHL19bPoQfj68lV0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/hamza.colak/Documents/sunu31_05_2018.pptx"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/FileResource/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"FileResource",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYW16YSIsImV4cCI6MTYzNzUyNzcxNiwiaWF0IjoxNjM3NTA5NzE2fQ.WZ9h__CfQ8z99MxwFADQm6mA9WWsHL19bPoQfj68lV0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/hamza.colak/Downloads/h2-console"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/FileResource/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"FileResource",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYW16YSIsImV4cCI6MTYzNzUyNzcxNiwiaWF0IjoxNjM3NTA5NzE2fQ.WZ9h__CfQ8z99MxwFADQm6mA9WWsHL19bPoQfj68lV0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/hamza.colak/Desktop/cks.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/FileResource/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"FileResource",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAsByteArray",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYW16YSIsImV4cCI6MTYzNzUyNzcxNiwiaWF0IjoxNjM3NTA5NzE2fQ.WZ9h__CfQ8z99MxwFADQm6mA9WWsHL19bPoQfj68lV0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/hamza.colak/Desktop/cks.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/FileResource/getFile?fileName=20211121231420_sunu31_05_2018.pptx",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"FileResource",
+						"getFile"
+					],
+					"query": [
+						{
+							"key": "fileName",
+							"value": "20211121231420_sunu31_05_2018.pptx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYW16YSIsImV4cCI6MTYzNzUyNzcxNiwiaWF0IjoxNjM3NTA5NzE2fQ.WZ9h__CfQ8z99MxwFADQm6mA9WWsHL19bPoQfj68lV0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/hamza.colak/Desktop/cks.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/FileResource/getById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"FileResource",
+						"getById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
